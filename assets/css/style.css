@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* === RESET === */
 * {
     margin: 0;
@@ -185,7 +189,6 @@ body {
 
 /* === POST CARD (index) === */
 .post-card {
-    animation: fadeSlideUp 0.7s ease forwards;
     opacity: 0;
     border-bottom: 1px solid #1f1f1f;
     padding-bottom: 2.5rem;
@@ -224,11 +227,15 @@ body {
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.post-card:nth-child(1) { animation-delay: 0.1s; }
-.post-card:nth-child(2) { animation-delay: 0.2s; }
-.post-card:nth-child(3) { animation-delay: 0.3s; }
-.post-card:nth-child(4) { animation-delay: 0.4s; }
-.post-card:nth-child(5) { animation-delay: 0.5s; }
+.post-card.visible {
+    animation: fadeSlideUp 0.7s ease forwards;
+}
+
+.post-card.visible:nth-child(1) { animation-delay: 0.1s; }
+.post-card.visible:nth-child(2) { animation-delay: 0.2s; }
+.post-card.visible:nth-child(3) { animation-delay: 0.3s; }
+.post-card.visible:nth-child(4) { animation-delay: 0.4s; }
+.post-card.visible:nth-child(5) { animation-delay: 0.5s; }
 
 .post-card:hover {
     border-left-color: #c4b5fd;

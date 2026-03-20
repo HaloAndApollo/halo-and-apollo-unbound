@@ -20,6 +20,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
+                <a href="#postcards" onclick="event.preventDefault(); document.getElementById('postcards').scrollIntoView({behavior: 'smooth', block: 'start'});">Postcards</a>
             </nav>
         </div>
     </header>
@@ -42,7 +43,7 @@
 
     <main>
         <div class="container">
-          <div class="posts-scroll">
+          <div class="posts-scroll" id="postcards">
 
             <!-- Example Post 1 -->
             <article class="post-card">
@@ -76,6 +77,19 @@
         <p>&copy; 2026 Halo &amp; Apollo Unbound</p>
     </footer>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.post-card').forEach(card => observer.observe(card));
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
     <script>
         new Splide('#photo-carousel', {
