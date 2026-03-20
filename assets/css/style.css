@@ -114,6 +114,7 @@ nav a:hover {
 
 #photo-carousel .splide__arrow {
     background: rgba(255, 255, 255, 0.05);
+    z-index: 3;
 }
 
 #photo-carousel .splide__arrow svg {
@@ -124,6 +125,10 @@ nav a:hover {
     background: rgba(167, 139, 250, 0.15);
 }
 
+#photo-carousel .splide__pagination {
+    z-index: 3;
+}
+
 #photo-carousel .splide__pagination__page {
     background: #333;
 }
@@ -131,6 +136,18 @@ nav a:hover {
 #photo-carousel .splide__pagination__page.is-active {
     background: #a78bfa;
 }
+
+.carousel-click-zone {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-click-left  { left: 0; }
+.carousel-click-right { right: 0; }
 
 /* === MAIN === */
 main {
