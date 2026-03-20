@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <circle cx="16" cy="16" r="15.5" fill="#0d0d0d" stroke="#a78bfa" stroke-width="1"/>
+
+  <!-- Compass points -->
+  <polygon points="16,3 14.2,13 17.8,13" fill="#a78bfa"/>
+  <polygon points="16,29 14.2,19 17.8,19" fill="#555"/>
+  <polygon points="3,16 13,14.2 13,17.8" fill="#555"/>
+  <polygon points="29,16 19,14.2 19,17.8" fill="#a78bfa"/>
+
+  <!-- Center background to separate compass from paw -->
+  <circle cx="16" cy="16" r="5" fill="#0d0d0d"/>
+
+  <!-- Paw print - main pad -->
+  <ellipse cx="16" cy="17.5" rx="2.8" ry="2.2" fill="#a78bfa"/>
+  <!-- Paw print - toe pads -->
+  <circle cx="13.5" cy="14.8" r="1.1" fill="#a78bfa"/>
+  <circle cx="16" cy="14" r="1.1" fill="#a78bfa"/>
+  <circle cx="18.5" cy="14.8" r="1.1" fill="#a78bfa"/>
+</svg>
