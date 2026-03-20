@@ -75,20 +75,20 @@ nav a:hover {
     border-bottom: 1px solid #1f1f1f;
 }
 
-.splide__slide {
+#photo-carousel .splide__slide {
     height: 56.25vw;
     max-height: 600px;
     overflow: hidden;
 }
 
-.splide__slide img {
+#photo-carousel .splide__slide img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     display: block;
 }
 
-.splide__slide.zoom img {
+#photo-carousel .splide__slide.zoom img {
     object-fit: cover;
 }
 
