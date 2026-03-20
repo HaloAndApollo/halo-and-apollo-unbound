@@ -1,0 +1,146 @@
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BASE === */
+body {
+    background-color: #0d0d0d;
+    color: #d4d4d4;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c4b5fd;
+}
+
+/* === HEADER === */
+header {
+    border-bottom: 1px solid #222;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    color: #666;
+    font-style: italic;
+    margin-top: 0.4rem;
+    font-size: 1rem;
+}
+
+nav {
+    margin-top: 1.2rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+/* === MAIN === */
+main {
+    flex: 1;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* === POST CARD (index) === */
+.post-card {
+    border-bottom: 1px solid #1f1f1f;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.post-date {
+    font-size: 0.8rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-card h2 {
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.post-card h2 a {
+    color: #ffffff;
+}
+
+.post-card h2 a:hover {
+    color: #a78bfa;
+}
+
+.post-card p {
+    margin-top: 0.8rem;
+    color: #999;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #a78bfa;
+}
+
+/* === FULL POST === */
+.post-full {
+    max-width: 720px;
+}
+
+.post-full h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-full p {
+    margin-bottom: 1.2rem;
+    color: #bbb;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid #1a1a1a;
+    color: #444;
+    font-size: 0.85rem;
+}
