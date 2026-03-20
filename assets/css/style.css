@@ -192,11 +192,36 @@ body {
     margin-bottom: 2.5rem;
     padding-left: 1.2rem;
     border-left: 3px solid #a78bfa;
-    background: linear-gradient(135deg, #111111 0%, #0d0d0d 100%);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%230d0d0d'/%3E%3Ccircle cx='1' cy='1' r='0.5' fill='%23161616'/%3E%3C/svg%3E");
-    padding-top: 1.2rem;
-    padding-right: 1rem;
-    transition: border-left-color 0.2s ease;
+    background-color: #161410;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23161410'/%3E%3Ccircle cx='1' cy='1' r='0.6' fill='%231a1815'/%3E%3C/svg%3E");
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0,0,0,0.3);
+    transition: border-left-color 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.post-stamp {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 54px;
+    border: 2px dotted #a78bfa;
+    opacity: 0.5;
+    transform: rotate(4deg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='20' rx='6' ry='5' fill='%23a78bfa'/%3E%3Ccircle cx='9' cy='13' r='3' fill='%23a78bfa'/%3E%3Ccircle cx='16' cy='11' r='3' fill='%23a78bfa'/%3E%3Ccircle cx='23' cy='13' r='3' fill='%23a78bfa'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px;
+    display: block;
+}
+
+.post-stamp:hover {
+    opacity: 1;
+    transform: rotate(4deg) scale(1.05);
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .post-card:nth-child(1) { animation-delay: 0.1s; }
@@ -207,6 +232,7 @@ body {
 
 .post-card:hover {
     border-left-color: #c4b5fd;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(167, 139, 250, 0.1);
 }
 
 .post-date {
@@ -219,11 +245,11 @@ body {
 
 .post-card h2 {
     margin-top: 0.5rem;
-    font-size: 1.6rem;
-    color: #ffffff;
-    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: #e8e0d0;
+    font-family: 'Caveat', cursive;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .post-card h2 a {
