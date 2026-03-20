@@ -38,6 +38,7 @@
 
     <main>
         <div class="container">
+          <div class="posts-scroll">
 
             <!-- Example Post 1 -->
             <article class="post-card">
@@ -47,8 +48,24 @@
                 <a href="posts/post1.html" class="read-more">Read more &rarr;</a>
             </article>
 
+          </div>
         </div>
     </main>
+
+    <section class="subscribe-section">
+        <div class="container">
+            <h3>Stay in the loop</h3>
+            <p>New posts straight to your inbox — no spam, just miles.</p>
+            <form
+                action="https://buttondown.com/api/emails/embed-subscribe/HaloAndApolloUnbound"
+                method="post"
+                class="embeddable-buttondown-form subscribe-form"
+            >
+                <input type="email" name="email" id="bd-email" placeholder="Your email address" />
+                <input type="submit" value="Subscribe" />
+            </form>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2026 Halo &amp; Apollo Unbound</p>
