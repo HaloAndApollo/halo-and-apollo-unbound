@@ -235,39 +235,43 @@ main {
 }
 
 .subscribe-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    flex-wrap: wrap !important;
 }
 
 .subscribe-form input[type="email"] {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    color: #d4d4d4;
-    padding: 0.6rem 1rem;
-    font-size: 0.95rem;
-    font-family: 'Georgia', serif;
-    width: 280px;
-    outline: none;
+    background: #1a1a1a !important;
+    border: 1px solid #333 !important;
+    color: #d4d4d4 !important;
+    padding: 0.6rem 1rem !important;
+    font-size: 0.95rem !important;
+    font-family: 'Georgia', serif !important;
+    width: 280px !important;
+    outline: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 .subscribe-form input[type="email"]:focus {
-    border-color: #a78bfa;
+    border-color: #a78bfa !important;
 }
 
 .subscribe-form input[type="submit"] {
-    background: #a78bfa;
-    color: #0d0d0d;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.95rem;
-    font-family: 'Georgia', serif;
-    cursor: pointer;
+    background: #a78bfa !important;
+    color: #0d0d0d !important;
+    border: none !important;
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.95rem !important;
+    font-family: 'Georgia', serif !important;
+    cursor: pointer !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 .subscribe-form input[type="submit"]:hover {
-    background: #c4b5fd;
+    background: #c4b5fd !important;
 }
 
 /* === FOOTER === */
