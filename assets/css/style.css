@@ -68,6 +68,56 @@ nav a:hover {
     color: #a78bfa;
 }
 
+/* === CAROUSEL === */
+.carousel-section {
+    width: 100%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    display: block;
+}
+
+.splide__slide.zoom img {
+    object-fit: cover;
+}
+
+.carousel-placeholder {
+    height: 420px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#photo-carousel .splide__arrow {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#photo-carousel .splide__arrow svg {
+    fill: #a78bfa;
+}
+
+#photo-carousel .splide__arrow:hover {
+    background: rgba(167, 139, 250, 0.15);
+}
+
+#photo-carousel .splide__pagination__page {
+    background: #333;
+}
+
+#photo-carousel .splide__pagination__page.is-active {
+    background: #a78bfa;
+}
+
 /* === MAIN === */
 main {
     flex: 1;

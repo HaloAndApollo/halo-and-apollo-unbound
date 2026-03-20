@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halo &amp; Apollo Unbound</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
 </head>
 <body>
 
@@ -18,6 +19,22 @@
             </nav>
         </div>
     </header>
+
+    <section class="carousel-section">
+        <div id="photo-carousel" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide zoom"><img src="assets/images/IMG_7715.jpeg" alt="Halo and Apollo on the road"></li>
+                    <li class="splide__slide zoom"><img src="assets/images/IMG_7797.jpeg" alt="Halo and Apollo on the road"></li>
+                    <li class="splide__slide zoom"><img src="assets/images/IMG_9609.jpeg" alt="Halo and Apollo on the road"></li>
+                    <li class="splide__slide"><img src="assets/images/IMG_3210.jpeg" alt="Halo and Apollo on the road"></li>
+                    <li class="splide__slide"><img src="assets/images/IMG_6826.jpeg" alt="Halo and Apollo on the road"></li>
+                    <li class="splide__slide zoom"><img src="assets/images/IMG_7909.jpeg" alt="Halo and Apollo on the road"></li>
+                    <li class="splide__slide"><img src="assets/images/IMG_7799.jpeg" alt="Halo and Apollo on the road"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <main>
         <div class="container">
@@ -37,5 +54,17 @@
         <p>&copy; 2026 Halo &amp; Apollo Unbound</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('#photo-carousel', {
+            type: 'loop',
+            perPage: 1,
+            autoplay: true,
+            interval: 4000,
+            pauseOnHover: true,
+            arrows: true,
+            pagination: true,
+        }).mount();
+    </script>
 </body>
 </html>
